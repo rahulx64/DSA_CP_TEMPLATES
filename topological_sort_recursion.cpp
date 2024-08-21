@@ -32,3 +32,19 @@ public:
 		return ans;
 	}
 };
+
+int main() {
+
+	//V = 6;
+	vector<int> adj[6] = {{}, {}, {3}, {1}, {0, 1}, {0, 2}};
+	int V = 6;
+	Solution obj;
+	vector<int> ans = obj.topoSort(V, adj);
+
+	for (auto node : ans) {
+		cout << node << " ";
+	}
+	cout << endl;
+
+	return 0;
+}
