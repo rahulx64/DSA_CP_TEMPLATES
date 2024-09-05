@@ -1,0 +1,5 @@
+infix to postfix conversion     is simple conversion  using stack priority of operaator
+
+  infix to prefix          conversion inverse string ,and change open brackett direction, convert it to post fix conversion with some change and and again reverse it 
+
+    postfix to infix         
