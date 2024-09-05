@@ -26,6 +26,14 @@ public:
 	}
 };
 
+
+struct Compare {
+    bool operator()(pair<int, int> const& a, pair<int, int> const& b) {
+        // Custom comparator (min-heap based on the second element of the pair)
+        return a.second > b.second;
+    }
+};
+
 int main()
 {
 	priority_queue<PII, vector<PII>, Compare> ds;
