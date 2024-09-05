@@ -12,7 +12,7 @@ int main() {
 
     // Output sorted vector
     for (int i : vec) {
-        std::cout << i << " ";
+        cout << i << " ";
     }
 
     return 0;
