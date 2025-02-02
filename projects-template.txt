@@ -1,0 +1,120 @@
+npm init 
+
+vite project {npm create vite@latest}
+
+ git init           to intialize the git version
+ git status      
+ git add x.js
+ git add .
+ git rm -r --cached node_modules
+ git commit -m "version-1 of myhotel"
+
+ git remote set-url origin https://github.com/<user_name>/<repo_name>.git           use set url  to push on github it will work
+ {
+     git remote add origin git@github.com:rahulx64/node-myhotel.git   add->set-url
+     git branch -M main
+     git push -u origin main
+}
+
+
+
+dir – List files and folders
+cd <folder> – Change directory
+cd .. – Move up one directory
+mkdir <folder> – Create a new folder
+rmdir /s <folder> – Delete a folder
+
+
+once project is done you can further change and push code through tunnel
+{
+     git status                # Check changes
+  git add .                 # Stage changes
+  git commit -m "message"   # Commit changes
+  git push origin main      # Push changes to GitHub
+
+}
+
+************************************************************************************************************
+TYPESCRIPTS
+to convert tsc file in js format run {tsc app.ts }
+
+{
+     //setting up typescript environment 
+ npm init -y
+npm i -g typescipt
+tsc --init --sourceMap --rootDir src --outDir dist
+tsc  //it will create dist
+
+on debug go to vscode launch.json and convert to this debugger which will help us debug
+
+{   this step is not that important 
+     {
+     // Use IntelliSense to learn about possible attributes.
+     // Hover to view descriptions of existing attributes.
+     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+     "version": "0.2.0",
+     "configurations": [
+
+          {
+               "type": "node",
+               "request": "launch",
+               "name": "Launch Program",
+               "skipFiles": [
+                    "<node_internals>/**"
+               ],
+               "program": "${workspaceFolder}\\TYPESCRIPTS\\dist\\index.js",
+               "outFiles": [
+                    "${workspaceFolder}/**/*.js"
+               ]
+          }
+     ]
+}
+}
+
+{
+     npm i --save-dev typescript
+}
+
+
+
+}
+
+
+************************************REACTJS
+
+1->components
+2->class ---classname 
+3-> form data  for---htmlfor
+4->expressions in jsx 
+
+-------reactjs/project1------
+comp3  is about rendering nested data of list using map and destructuring
+
+comp4 is used for  props  ---------------------------------
+
+props has different form{
+     childern  as html closing components
+     function can also be passed as props 
+     destructuring for redable props  
+
+
+}
+
+----------comp5---conditional rendering
+6--> inline style  in {style={{padding:'12'}}}
+7-->{events in react js}
+8-->state usestate hooks
+{array destructuring,object destructuring}
+comp6-->{use state on array }
+comp7-->use state on object
+portal-->{portal in react}
+useeffect->{}
+strictmode for double rendering
+prop drilling
+context api {provider consumer}
+useContext hook
+usereducer hook comp15
+useref hook comp16
+custom hook
+useid hook 
+axios library
